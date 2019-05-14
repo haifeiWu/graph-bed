@@ -1,0 +1,24 @@
+server:
+  profiles:
+    active: dev
+  servlet:
+    context-path: /graph
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: ${logging.path}
+
+spring:
+  application:
+    name: app-track
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/graph-bed?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+
+mybatis:
+  mapperLocations: classpath:mappings/*.xml
+
+logging:
+  config: classpath:log4j.xml
+  path: /data/log/goocity/

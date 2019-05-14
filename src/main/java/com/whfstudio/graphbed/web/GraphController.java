@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @author wuhaifei 2019-05-13
  */
 @RestController
-@RequestMapping("/graph")
 public class GraphController {
 
     @RequestMapping(value = "/hello")
