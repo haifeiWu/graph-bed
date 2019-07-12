@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan(basePackages = "com.chelaile.apptrack.dao")
 public class GraphBedApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GraphBedApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(GraphBedApplication.class, args);
+    }
 
 }
