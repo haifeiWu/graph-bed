@@ -10,7 +10,7 @@ server:
 
 spring:
   application:
-    name: app-track
+    name: graph-bed-web
   datasource:
     username: root
     password: 123456
@@ -19,6 +19,6 @@ spring:
 mybatis:
   mapperLocations: classpath:mappings/*.xml
 
-logging:
-  config: classpath:log4j.xml
-  path: /data/log/goocity/
+#logging:
+#  config: classpath:log4j.xml.temp
+#  path: /data/log/goocity/

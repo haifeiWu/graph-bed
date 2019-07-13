@@ -25,7 +25,6 @@
     <modules>
         <module>graph-bed-interface</module>
         <module>graph-bed-provider</module>
-        <module>graph-bed-consumer</module>
         <module>graph-bed-web</module>
     </modules>
 
