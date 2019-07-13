@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: dubbo-auto-configuration-provider-demo
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/graph-bed?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+
+mybatis:
+  mapperLocations: classpath:mappings/*.xml
+
+dubbo:
+  registry:
+    address: N/A
+  protocol:
+    port: 12345
+    name: dubbo
+  scan:
+    base-packages: com.whfstudio.graphbed

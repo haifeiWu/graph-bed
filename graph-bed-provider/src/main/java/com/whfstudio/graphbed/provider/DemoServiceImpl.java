@@ -1,4 +1,4 @@
-package com.whfstudio.demo.provider;
+package com.whfstudio.graphbed.provider;
 
 import org.apache.dubbo.config.annotation.Service;
 import com.whfstudio.demo.DemoService;

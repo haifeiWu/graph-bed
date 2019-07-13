@@ -1,5 +1,7 @@
 package com.whfstudio.graphbed.web;
 
+import com.whfstudio.demo.DemoService;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,9 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/v1")
 public class GraphController {
 
+    @Reference(version = "1.0.0", url = "dubbo://127.0.0.1:12345")
+    private DemoService demoService;
+
     @RequestMapping(value = "/hello")
     public String hello() {
-        return "hello";
+        String hello = demoService.sayHello("");
+        return hello;
     }
 
     @RequestMapping(value = "/list")

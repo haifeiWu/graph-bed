@@ -1,4 +1,4 @@
-package com.whfstudio.demo.provider;
+package com.whfstudio.graphbed.provider;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
