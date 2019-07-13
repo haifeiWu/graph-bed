@@ -10,7 +10,7 @@ server:
 
 spring:
   application:
-    name: dubbo-auto-configure-consumer-sample
+    name: graph-bed-web
 
 #logging:
 #  config: classpath:log4j.xml.temp
