@@ -1,7 +1,7 @@
 package com.whfstudio.graphbed.provider;
 
 import org.apache.dubbo.config.annotation.Service;
-import com.whfstudio.demo.DemoService;
+import com.whfstudio.graphbed.service.DemoService;
 import org.apache.dubbo.rpc.RpcContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

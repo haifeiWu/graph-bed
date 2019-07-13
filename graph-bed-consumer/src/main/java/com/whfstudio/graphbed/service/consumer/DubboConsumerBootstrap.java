@@ -1,6 +1,6 @@
-package com.whfstudio.demo.consumer;
+package com.whfstudio.graphbed.service.consumer;
 
-import com.whfstudio.demo.DemoService;
+import com.whfstudio.graphbed.service.DemoService;
 
 import org.apache.dubbo.config.annotation.Reference;
 

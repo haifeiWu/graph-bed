@@ -1,4 +1,4 @@
-package com.whfstudio.demo;
+package com.whfstudio.graphbed.service;
 
 public interface DemoService {
 

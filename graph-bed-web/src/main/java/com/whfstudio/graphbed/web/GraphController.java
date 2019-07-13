@@ -1,6 +1,6 @@
 package com.whfstudio.graphbed.web;
 
-import com.whfstudio.demo.DemoService;
+import com.whfstudio.graphbed.service.DemoService;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
