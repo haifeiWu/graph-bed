@@ -1,9 +1,10 @@
-package com.whfstudio.graphbed.dao;
+package com.whfstudio.graphbed.provider.dao;
 
-import com.whfstudio.graphbed.model.GraphInfo;
-import com.whfstudio.graphbed.model.GraphInfoExample;
-import java.util.List;
+import com.whfstudio.graphbed.provider.model.GraphInfo;
+import com.whfstudio.graphbed.provider.model.GraphInfoExample;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface GraphInfoMapper {
     long countByExample(GraphInfoExample example);

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: dubbo-auto-configuration-provider-demo
+    name: graph-bed-provider
   datasource:
     username: root
     password: 123456

@@ -10,14 +10,7 @@ server:
 
 spring:
   application:
-    name: graph-bed-web
-  datasource:
-    username: root
-    password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/graph-bed?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
-
-mybatis:
-  mapperLocations: classpath:mappings/*.xml
+    name: dubbo-auto-configure-consumer-sample
 
 #logging:
 #  config: classpath:log4j.xml.temp

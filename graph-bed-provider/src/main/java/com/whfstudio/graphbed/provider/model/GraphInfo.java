@@ -1,4 +1,4 @@
-package com.whfstudio.graphbed.model;
+package com.whfstudio.graphbed.provider.model;
 
 import java.io.Serializable;
 import java.util.Date;
