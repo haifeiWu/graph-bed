@@ -1,7 +1,7 @@
 package com.whfstudio.graphbed.provider.dao;
 
-import com.whfstudio.graphbed.provider.model.GraphInfo;
-import com.whfstudio.graphbed.provider.model.GraphInfoExample;
+import com.whfstudio.graphbed.common.model.GraphInfo;
+import com.whfstudio.graphbed.common.model.GraphInfoExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

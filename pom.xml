@@ -26,6 +26,7 @@
         <module>graph-bed-interface</module>
         <module>graph-bed-provider</module>
         <module>graph-bed-web</module>
+        <module>graph-bed-common</module>
     </modules>
 
     <dependencyManagement>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.whfstudio.graphbed.provider.dao.GraphInfoMapper">
-  <resultMap id="BaseResultMap" type="com.whfstudio.graphbed.provider.model.GraphInfo">
+  <resultMap id="BaseResultMap" type="com.whfstudio.graphbed.common.model.GraphInfo">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="pic_url" jdbcType="VARCHAR" property="picUrl" />
     <result column="pic_name" jdbcType="VARCHAR" property="picName" />
@@ -72,7 +72,7 @@
   <sql id="Base_Column_List">
     id, pic_url, pic_name, pic_code, pic_size, update_time, create_time, pic_type
   </sql>
-  <select id="selectByExample" parameterType="com.whfstudio.graphbed.provider.model.GraphInfoExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.whfstudio.graphbed.common.model.GraphInfoExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -99,13 +99,13 @@
     delete from graph-info
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.whfstudio.graphbed.provider.model.GraphInfoExample">
+  <delete id="deleteByExample" parameterType="com.whfstudio.graphbed.common.model.GraphInfoExample">
     delete from graph-info
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.whfstudio.graphbed.provider.model.GraphInfo">
+  <insert id="insert" parameterType="com.whfstudio.graphbed.common.model.GraphInfo">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
@@ -116,7 +116,7 @@
       #{picSize,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, 
       #{picType,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.whfstudio.graphbed.provider.model.GraphInfo">
+  <insert id="insertSelective" parameterType="com.whfstudio.graphbed.common.model.GraphInfo">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
@@ -168,7 +168,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.whfstudio.graphbed.provider.model.GraphInfoExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.whfstudio.graphbed.common.model.GraphInfoExample" resultType="java.lang.Long">
     select count(*) from graph-info
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -220,7 +220,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.whfstudio.graphbed.provider.model.GraphInfo">
+  <update id="updateByPrimaryKeySelective" parameterType="com.whfstudio.graphbed.common.model.GraphInfo">
     update graph-info
     <set>
       <if test="picUrl != null">
@@ -247,7 +247,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.whfstudio.graphbed.provider.model.GraphInfo">
+  <update id="updateByPrimaryKey" parameterType="com.whfstudio.graphbed.common.model.GraphInfo">
     update graph-info
     set pic_url = #{picUrl,jdbcType=VARCHAR},
       pic_name = #{picName,jdbcType=VARCHAR},
