@@ -1,6 +1,7 @@
 package com.whfstudio.graphbed.web;
 
 
+import com.alibaba.fastjson.JSON;
 import com.whfstudio.graphbed.common.model.GraphInfo;
 import com.whfstudio.graphbed.service.DemoService;
 import com.whfstudio.graphbed.service.GraphService;
@@ -27,7 +28,7 @@ public class GraphController {
 
     @RequestMapping(value = "/hello")
     public String hello() {
-        String hello = demoService.sayHello("");
+        String hello = demoService.sayHello("haifeisi");
         log.info("result : [{}]",hello);
         return hello;
     }
@@ -35,8 +36,9 @@ public class GraphController {
     @RequestMapping(value = "/list")
     public String list() {
         List<GraphInfo> graphInfoList = graphService.graphList();
-        log.info("result : [{}]");
-        return "hello";
+        String result = JSON.toJSONString(graphInfoList);
+        log.info("result : [{}]",result);
+        return result;
     }
 
     @RequestMapping(value = "/rename")

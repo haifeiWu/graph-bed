@@ -3,8 +3,8 @@ spring:
     name: graph-bed-provider
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/graph-bed?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    password: TengXunYun@2018
+    url: jdbc:mysql://mysql.whforever.cn:3306/graph-bed?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
 
 mybatis:
   mapperLocations: classpath:mappings/*.xml
