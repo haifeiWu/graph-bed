@@ -20,7 +20,7 @@
         <log4j2.version>2.11.1</log4j2.version>
         <disruptor.version>3.4.2</disruptor.version>
         <slf4j.version>1.7.25</slf4j.version>
-        <fastjson.version>1.2.55</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
     </properties>
 
     <modules>
